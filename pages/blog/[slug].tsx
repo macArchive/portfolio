@@ -1,14 +1,13 @@
 import List from '@/comps/blog/list'
 import Layout from '@/comps/layout'
-import { getAllPosts, getPostBySlug } from '@/lib/api'
+import {getAllPosts, getPostBySlug} from '@/lib/api'
 import markdownToHtml from '@/lib/md'
-import { Heading, Stack } from '@chakra-ui/react'
+import {Heading, Stack} from '@chakra-ui/react'
 import Image from 'next/image'
 import markdownStyles from './markdown.module.css'
 
-export default function Post({ post, allPosts }) {
+export default function Post({post, allPosts}) {
   const morePosts = allPosts.filter(item => !item.title.includes(post.title))
-  console.log(morePosts)
   return (
     <Layout title={post.title} description={post.excerpt}>
       <Stack align='center' maxW='85vw'>
@@ -22,7 +21,7 @@ export default function Post({ post, allPosts }) {
       </Stack>
       <div
         className={markdownStyles.markdown}
-        dangerouslySetInnerHTML={{ __html: post.content }}
+        dangerouslySetInnerHTML={{__html: post.content}}
       />
 
       <List tag='more' allPosts={morePosts} />
@@ -30,7 +29,7 @@ export default function Post({ post, allPosts }) {
   )
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({params}) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
