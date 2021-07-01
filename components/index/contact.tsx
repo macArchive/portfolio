@@ -5,8 +5,8 @@ import {
   Heading,
   Input,
   Stack,
-  Textarea
-} from '@chakra-ui/react'
+  Textarea,
+} from "@chakra-ui/react";
 
 export default function Contact() {
   return (
@@ -32,5 +32,5 @@ export default function Contact() {
         </Stack>
       </form>
     </Stack>
-  )
+  );
 }

@@ -1,16 +1,16 @@
-import { Heading, Stack, Text } from '@chakra-ui/react'
-import Link from 'next/link'
+import { Heading, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function List({ tag, allPosts }) {
-  let posts
-  if (tag === 'recent') {
-    posts = allPosts.slice(0, 3)
-  } else if (tag === 'all') {
-    posts = allPosts
-  } else if (tag === 'more') {
-    posts = allPosts
+  let posts;
+  if (tag === "recent") {
+    posts = allPosts.slice(0, 3);
+  } else if (tag === "all") {
+    posts = allPosts;
+  } else if (tag === "more") {
+    posts = allPosts;
   } else {
-    posts = allPosts.filter((post) => post.topic.includes(tag))
+    posts = allPosts.filter((post) => post.topic.includes(tag));
   }
   return (
     <Stack align="center" pt={4} spacing={4} minHeight="450px">
@@ -38,5 +38,5 @@ export default function List({ tag, allPosts }) {
         </Link>
       ))}
     </Stack>
-  )
+  );
 }

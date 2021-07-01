@@ -1,6 +1,6 @@
-import { Stack, Text } from '@chakra-ui/react'
-import Link from 'next/link'
-import { AiFillGithub, AiFillYoutube } from 'react-icons/ai'
+import { Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
+import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -17,9 +17,9 @@ export default function Footer() {
         </Link>
       </Stack>
       <Text fontSize="sm" py={2} w="100vw" align="center">
-        &copy; {new Date().getFullYear()}{' '}
+        &copy; {new Date().getFullYear()}{" "}
         <Link href="https://machooper.tech">Mac</Link>, All Rights Reserved
       </Text>
     </Stack>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import Contact from '@/comps/index/contact'
-import Hero from '@/comps/index/hero'
-import Work from '@/comps/index/work'
-import Layout from '@/layout/index'
-import { Stack } from '@chakra-ui/react'
+import Contact from "@/comps/index/contact";
+import Hero from "@/comps/index/hero";
+import Work from "@/comps/index/work";
+import Layout from "@/layout/index";
+import { Stack } from "@chakra-ui/react";
 export default function Home() {
   return (
     <Layout
@@ -15,5 +15,5 @@ export default function Home() {
         <Contact />
       </Stack>
     </Layout>
-  )
+  );
 }

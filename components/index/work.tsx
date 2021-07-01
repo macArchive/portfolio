@@ -1,8 +1,8 @@
-import { Heading, Stack } from '@chakra-ui/react'
-import { GiSandSnake } from 'react-icons/gi'
-import { IoLogoGameControllerA } from 'react-icons/io'
-import { RiTodoFill } from 'react-icons/ri'
-import Item from './item'
+import { Heading, Stack } from "@chakra-ui/react";
+import { GiSandSnake } from "react-icons/gi";
+import { IoLogoGameControllerA } from "react-icons/io";
+import { RiTodoFill } from "react-icons/ri";
+import Item from "./item";
 
 export default function Work() {
   return (
@@ -29,5 +29,5 @@ export default function Work() {
         />
       </Stack>
     </Stack>
-  )
+  );
 }

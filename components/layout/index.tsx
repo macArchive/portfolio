@@ -1,7 +1,7 @@
-import Content from './content'
-import Footer from './footer'
-import Head from './head'
-import Header from './header'
+import Content from "./content";
+import Footer from "./footer";
+import Head from "./head";
+import Header from "./header";
 
 interface LayoutProps {
   title: string;
@@ -28,5 +28,5 @@ export default function Layout({ title, description, children }: LayoutProps) {
       <Content>{children}</Content>
       <Footer />
     </>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import { Heading, Stack, Text } from '@chakra-ui/layout'
+import { Heading, Stack, Text } from "@chakra-ui/layout";
 
 export default function Hero() {
   return (
@@ -9,5 +9,5 @@ export default function Hero() {
         Technology, Music, Games and Fiteness. As well as plenty more. Enjoy.
       </Text>
     </Stack>
-  )
+  );
 }

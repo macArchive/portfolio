@@ -1,5 +1,5 @@
-import { ButtonGroup, IconButton } from '@chakra-ui/react'
-import { FiGithub } from 'react-icons/fi'
+import { ButtonGroup, IconButton } from "@chakra-ui/react";
+import { FiGithub } from "react-icons/fi";
 
 export default function SocialIcons() {
   return (
@@ -12,5 +12,5 @@ export default function SocialIcons() {
         variant="link"
       />
     </ButtonGroup>
-  )
+  );
 }

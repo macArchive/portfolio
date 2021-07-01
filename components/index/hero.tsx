@@ -1,5 +1,5 @@
-import { Heading, Stack, Text } from '@chakra-ui/layout'
-import Link from 'next/link'
+import { Heading, Stack, Text } from "@chakra-ui/layout";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,5 +16,5 @@ export default function Hero() {
         Why not read some of my blog posts <Link href="/blog">here.</Link>
       </Text>
     </Stack>
-  )
+  );
 }

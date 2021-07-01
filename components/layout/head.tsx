@@ -1,5 +1,5 @@
-import NextHead from 'next/head'
-import { siteTitle } from '../../pages/_app'
+import NextHead from "next/head";
+import { siteTitle } from "../../pages/_app";
 
 interface HeadProps {
   pageTitle: string;
@@ -9,7 +9,7 @@ interface HeadProps {
   siteIcon: string;
   touchIcon: string;
   siteLocale: string;
-  siteType: 'website' | 'app';
+  siteType: "website" | "app";
   siteUrl: string;
   themeColor: string;
 }
@@ -24,7 +24,7 @@ export default function Head({
   siteLocale,
   siteType,
   siteUrl,
-  themeColor
+  themeColor,
 }: HeadProps) {
   return (
     <NextHead>
@@ -50,5 +50,5 @@ export default function Head({
       <link rel="apple-touch-icon" href={touchIcon}></link>
       <meta name="theme-color" content={themeColor}></meta>
     </NextHead>
-  )
+  );
 }
