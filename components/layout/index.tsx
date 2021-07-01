@@ -16,12 +16,12 @@ export default function Layout({ title, description, children }: LayoutProps) {
         pageTitle={title}
         pageDescription={description}
         socialImage='ph'
-        socialImageText='ph'
-        siteIcon='ph'
-        touchIcon='ph'
+        socialImageText={title}
+        siteIcon='/logo.png'
+        touchIcon='/logo.png'
         siteLocale='en_GB'
         siteType='website'
-        siteUrl='https://.com'
+        siteUrl='https://machooper.tech'
         themeColor='#0099ff'
       />
       <Header />
