@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillYoutube } from 'react-icons/ai'
 
 export default function Footer() {
   return (
-    <Stack align='center'>
+    <Stack align='center' py={20}>
       <Stack direction='row' align='center' spacing={4}>
         <Link
           href='https://www.youtube.com/channel/UCnTtBprmR4yTz3ieMSuWzlA'

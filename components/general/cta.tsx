@@ -6,8 +6,10 @@ export default function Cta({ heading, text, button, leftIcon, url }) {
     <Stack py={12} position='relative'>
       <Stack
         maxW='85vw'
+        height='400px'
         textAlign='center'
         align='center'
+        justify='center'
         _after={{
           content: '""',
           width: '100vw',
@@ -19,7 +21,7 @@ export default function Cta({ heading, text, button, leftIcon, url }) {
           transformOrigin: 'left top',
           transform: 'skewY(3deg)',
           overflowX: 'hidden',
-          boxShadow: 'lg'
+          boxShadow: 'lg',
         }}
         _before={{
           content: '""',
@@ -31,11 +33,15 @@ export default function Cta({ heading, text, button, leftIcon, url }) {
           top: 0,
           transformOrigin: 'left bottom',
           transform: 'skewY(3deg)',
-          overflowX: 'hidden'
+          overflowX: 'hidden',
         }}
-        spacing={4}>
-        <Heading>{heading}</Heading>
-        <Text textAlign='center'>{text}</Text>
+        spacing={7}>
+        <Heading maxW='400px' mx='auto'>
+          {heading}
+        </Heading>
+        <Text textAlign='center' maxW='400px'>
+          {text}
+        </Text>
         <Link href={url} passHref>
           <Button variant='solid' leftIcon={leftIcon}>
             {button}
