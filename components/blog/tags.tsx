@@ -8,12 +8,12 @@ export default function Tags({ set }) {
     'programming',
     'web',
     'fitness',
-    'all',
+    'all'
   ]
   return (
     <Wrap spacing={4} justify='center' pt={9} maxW='85vw'>
       {tags.map((tag, index) => (
-        <WrapItem>
+        <WrapItem key={index}>
           <Tag
             size='md'
             variant='solid'
@@ -21,7 +21,7 @@ export default function Tags({ set }) {
             color='white'
             align='center'
             _hover={{
-              bg: 'primary.600',
+              bg: 'primary.600'
             }}
             onClick={() => set(tags[index])}>
             {tag[0].toUpperCase() + tag.slice(1)}

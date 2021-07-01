@@ -16,7 +16,7 @@ export default function Blog({ allPosts }) {
       description='A Freelance Web Developer building fast, responsive and beautiful websites making use of cutting edge technology and perfect SEO techniques.'>
       <Stack spacing={8}>
         <Hero />
-        <List tag={tag} posts={allPosts} />
+        <List tag={tag} allPosts={allPosts} />
         <Tags set={setTag} />
         <Cta
           heading='Interested in More Content?!'
@@ -37,10 +37,10 @@ export async function getStaticProps() {
     'coverImage',
     'date',
     'slug',
-    'excerpt',
+    'excerpt'
   ])
 
   return {
-    props: { allPosts },
+    props: { allPosts }
   }
 }

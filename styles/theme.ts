@@ -4,13 +4,13 @@ import { Button, Heading, Text } from './components'
 
 const config: ThemeConfig = {
   initialColorMode: 'light',
-  useSystemColorMode: true,
+  useSystemColorMode: true
 }
 
 export const theme = extendTheme({
   fonts: {
     heading: 'system-ui',
-    body: 'system-ui',
+    body: 'system-ui'
   },
   colors: {
     black: '#1c1c1c',
@@ -25,7 +25,7 @@ export const theme = extendTheme({
       600: '#008ae6',
       700: '#007acc',
       800: '#006bb3',
-      900: '#005c99',
+      900: '#005c99'
     },
     secondary: {
       50: '#ffca80',
@@ -37,8 +37,8 @@ export const theme = extendTheme({
       600: '#e68600',
       700: '#cc7700',
       800: '#b36800',
-      900: '#995900',
-    },
+      900: '#995900'
+    }
   },
   styles: {
     global: {
@@ -51,28 +51,28 @@ export const theme = extendTheme({
         fontFamily: 'body',
         color: mode('black', 'white'),
         bg: mode('white', 'black'),
-        mx: 'auto',
+        mx: 'auto'
       },
       a: {
         color: 'primary.500',
         _hover: {
           color: 'primary.700',
           textDecoration: 'underline',
-          cursor: 'pointer',
-        },
-      },
-    },
+          cursor: 'pointer'
+        }
+      }
+    }
   },
   textStyles: {
     h2: {
       fontSize: '36px',
-      fontWeight: 'semibold',
-    },
+      fontWeight: 'semibold'
+    }
   },
   components: {
     Button,
     Text,
-    Heading,
+    Heading
   },
-  config,
+  config
 })

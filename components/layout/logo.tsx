@@ -4,10 +4,10 @@ import { siteTitle } from 'pages/_app'
 
 export default function Logo() {
   return (
-    <Link href='/' passHref>
-      <HStack spacing={1} cursor='pointer'>
-        <Icon Name='logo' size='32px' />
-        <Heading as='h1' size='md'>
+    <Link href="/" passHref>
+      <HStack spacing={1} cursor="pointer">
+        <Icon Name="logo" size="32px" />
+        <Heading as="h1" size="md">
           {siteTitle}
         </Heading>
       </HStack>

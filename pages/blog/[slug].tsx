@@ -7,7 +7,7 @@ import Image from 'next/image'
 import markdownStyles from './markdown.module.css'
 
 export default function Post({ post, allPosts }) {
-  let morePosts = allPosts.filter(item => !item.title.includes(post.title))
+  const morePosts = allPosts.filter(item => !item.title.includes(post.title))
   console.log(morePosts)
   return (
     <Layout title={post.title} description={post.excerpt}>
@@ -21,11 +21,11 @@ export default function Post({ post, allPosts }) {
         <Heading>{post.title}</Heading>
       </Stack>
       <div
-        className={markdownStyles['markdown']}
+        className={markdownStyles.markdown}
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
-      <List tag='more' posts={morePosts} />
+      <List tag='more' allPosts={morePosts} />
     </Layout>
   )
 }
@@ -38,7 +38,7 @@ export async function getStaticProps({ params }) {
     'author',
     'content',
     'ogImage',
-    'coverImage',
+    'coverImage'
   ])
   const content = await markdownToHtml(post.content || '')
   const allPosts = getAllPosts([
@@ -47,16 +47,16 @@ export async function getStaticProps({ params }) {
     'coverImage',
     'date',
     'slug',
-    'excerpt',
+    'excerpt'
   ])
   return {
     props: {
       post: {
         ...post,
-        content,
+        content
       },
-      allPosts,
-    },
+      allPosts
+    }
   }
 }
 
@@ -67,10 +67,10 @@ export async function getStaticPaths() {
     paths: posts.map(post => {
       return {
         params: {
-          slug: post.slug,
-        },
+          slug: post.slug
+        }
       }
     }),
-    fallback: false,
+    fallback: false
   }
 }

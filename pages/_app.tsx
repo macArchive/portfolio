@@ -2,7 +2,7 @@ import { theme } from '@/styles/theme'
 import {
   ChakraProvider,
   cookieStorageManager,
-  localStorageManager,
+  localStorageManager
 } from '@chakra-ui/react'
 import '@fontsource/roboto/400.css'
 
@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps, cookies }) {
 export async function getServerSideProps({ req }) {
   return {
     props: {
-      cookies: req.headers.cookie ?? '',
-    },
+      cookies: req.headers.cookie ?? ''
+    }
   }
 }

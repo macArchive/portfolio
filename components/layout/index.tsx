@@ -4,9 +4,9 @@ import Head from './head'
 import Header from './header'
 
 interface LayoutProps {
-  title: string
-  description: string
-  children: any
+  title: string;
+  description: string;
+  children: any;
 }
 
 export default function Layout({ title, description, children }: LayoutProps) {
@@ -15,14 +15,14 @@ export default function Layout({ title, description, children }: LayoutProps) {
       <Head
         pageTitle={title}
         pageDescription={description}
-        socialImage='ph'
-        socialImageText='ph'
-        siteIcon='ph'
-        touchIcon='ph'
-        siteLocale='en_GB'
-        siteType='website'
-        siteUrl='https://.com'
-        themeColor='#0099ff'
+        socialImage="ph"
+        socialImageText="ph"
+        siteIcon="ph"
+        touchIcon="ph"
+        siteLocale="en_GB"
+        siteType="website"
+        siteUrl="https://.com"
+        themeColor="#0099ff"
       />
       <Header />
       <Content>{children}</Content>

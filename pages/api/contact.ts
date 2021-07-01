@@ -6,8 +6,8 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: id,
-    pass: sk,
-  },
+    pass: sk
+  }
 })
 
 export default function handler(req, res) {
@@ -19,7 +19,7 @@ export default function handler(req, res) {
       Name: ${req.body.name} <br/>
       Email: <a href='mailto:${req.body.email}'>${req.body.email}</a> <br/>
       Message: ${req.body.message}
-    `,
+    `
   }
 
   transporter.sendMail(mailOptions, function (error, info) {
