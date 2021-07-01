@@ -1,17 +1,17 @@
-import List from "@/comps/blog/list";
-import Layout from "@/comps/layout";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import markdownToHtml from "@/lib/md";
-import { Heading, Stack } from "@chakra-ui/react";
-import Image from "next/image";
-import markdownStyles from "./markdown.module.css";
+import List from '@/comps/blog/list'
+import Layout from '@/comps/layout'
+import { getAllPosts, getPostBySlug } from '@/lib/api'
+import markdownToHtml from '@/lib/md'
+import { Heading, Stack } from '@chakra-ui/react'
+import Image from 'next/image'
+import markdownStyles from './markdown.module.css'
 
 export default function Post({ post, allPosts }) {
-  let morePosts = allPosts.filter((item) => !item.title.includes(post.title));
-  console.log(morePosts);
+  let morePosts = allPosts.filter(item => !item.title.includes(post.title))
+  console.log(morePosts)
   return (
     <Layout title={post.title} description={post.excerpt}>
-      <Stack align="center" maxW="85vw">
+      <Stack align='center' maxW='85vw'>
         <Image
           src={post.coverImage}
           alt={post.title}
@@ -21,34 +21,34 @@ export default function Post({ post, allPosts }) {
         <Heading>{post.title}</Heading>
       </Stack>
       <div
-        className={markdownStyles["markdown"]}
+        className={markdownStyles['markdown']}
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
-      <List tag="more" posts={morePosts} />
+      <List tag='more' posts={morePosts} />
     </Layout>
-  );
+  )
 }
 
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug, [
-    "title",
-    "date",
-    "slug",
-    "author",
-    "content",
-    "ogImage",
-    "coverImage",
-  ]);
-  const content = await markdownToHtml(post.content || "");
+    'title',
+    'date',
+    'slug',
+    'author',
+    'content',
+    'ogImage',
+    'coverImage',
+  ])
+  const content = await markdownToHtml(post.content || '')
   const allPosts = getAllPosts([
-    "title",
-    "topic",
-    "coverImage",
-    "date",
-    "slug",
-    "excerpt",
-  ]);
+    'title',
+    'topic',
+    'coverImage',
+    'date',
+    'slug',
+    'excerpt',
+  ])
   return {
     props: {
       post: {
@@ -57,20 +57,20 @@ export async function getStaticProps({ params }) {
       },
       allPosts,
     },
-  };
+  }
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllPosts(['slug'])
 
   return {
-    paths: posts.map((post) => {
+    paths: posts.map(post => {
       return {
         params: {
           slug: post.slug,
         },
-      };
+      }
     }),
     fallback: false,
-  };
+  }
 }

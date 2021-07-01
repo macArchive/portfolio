@@ -1,8 +1,8 @@
 {
-  "prettier.arrowParens": "avoid",
-  "prettier.jsxBracketSameLine": true,
-  "prettier.jsxSingleQuote": true,
-  "prettier.quoteProps": "consistent",
-  "prettier.semi": false,
-  "prettier.singleQuote": true
+  "arrowParens": "avoid",
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": true,
+  "quoteProps": "consistent",
+  "semi": false,
+  "singleQuote": true
 }

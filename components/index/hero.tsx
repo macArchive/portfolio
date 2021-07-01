@@ -1,10 +1,10 @@
-import { Heading, Stack, Text } from "@chakra-ui/layout";
-import Link from "next/link";
+import { Heading, Stack, Text } from '@chakra-ui/layout'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
     <Stack spacing={3}>
-      <Heading maxW="70vw">
+      <Heading maxW='70vw'>
         Hi, I'm <br /> Mac Hooper
       </Heading>
       <Text>
@@ -13,8 +13,8 @@ export default function Hero() {
         techniques.
       </Text>
       <Text>
-        Why not read some of my blog posts <Link href="/blog">here.</Link>
+        Why not read some of my blog posts <Link href='/blog'>here.</Link>
       </Text>
     </Stack>
-  );
+  )
 }
