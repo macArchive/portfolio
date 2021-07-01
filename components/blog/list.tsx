@@ -9,7 +9,6 @@ export default function List({ tag, posts }) {
   } else {
     posts = posts.filter((post) => post.topic.includes(tag));
   }
-  console.log(posts);
   return (
     <Stack align="center" pt={4} spacing={4} minHeight="450px">
       <Heading size="lg">{tag[0].toUpperCase() + tag.slice(1)} Posts</Heading>

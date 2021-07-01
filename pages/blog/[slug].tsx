@@ -6,7 +6,6 @@ import Image from "next/image";
 import markdownStyles from "./markdown.module.css";
 
 export default function Post({ post, morePosts }) {
-  console.log(post);
   return (
     <Layout title={post.title} description={post.excerpt}>
       <Stack align="center" maxW="85vw">
