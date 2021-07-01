@@ -1,3 +1,4 @@
+import List from "@/comps/blog/list";
 import Layout from "@/comps/layout";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/md";
@@ -5,7 +6,9 @@ import { Heading, Stack } from "@chakra-ui/react";
 import Image from "next/image";
 import markdownStyles from "./markdown.module.css";
 
-export default function Post({ post, morePosts }) {
+export default function Post({ post, allPosts }) {
+  let morePosts = allPosts.filter((item) => !item.title.includes(post.title));
+  console.log(morePosts);
   return (
     <Layout title={post.title} description={post.excerpt}>
       <Stack align="center" maxW="85vw">
@@ -21,6 +24,8 @@ export default function Post({ post, morePosts }) {
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
+
+      <List tag="more" posts={morePosts} />
     </Layout>
   );
 }
@@ -36,13 +41,21 @@ export async function getStaticProps({ params }) {
     "coverImage",
   ]);
   const content = await markdownToHtml(post.content || "");
-
+  const allPosts = getAllPosts([
+    "title",
+    "topic",
+    "coverImage",
+    "date",
+    "slug",
+    "excerpt",
+  ]);
   return {
     props: {
       post: {
         ...post,
         content,
       },
+      allPosts,
     },
   };
 }

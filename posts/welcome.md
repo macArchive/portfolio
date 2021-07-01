@@ -19,5 +19,3 @@ If you have any questions on the new site or anything else feel free to reach ou
 Thanks for reading,
 
 Mac
-
-Published: 15.05.21

@@ -6,6 +6,8 @@ export default function List({ tag, posts }) {
     posts = posts.slice(0, 3);
   } else if (tag === "all") {
     posts = posts;
+  } else if (tag === 'more') {
+    posts = posts
   } else {
     posts = posts.filter((post) => post.topic.includes(tag));
   }
