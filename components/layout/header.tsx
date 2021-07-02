@@ -9,7 +9,7 @@ export default function Header() {
       justify='space-between'
       p='1.5rem'
       mb={{ base: '1rem', md: '2rem' }}>
-      <Link href='/' passHref>
+      <Link href='/'>
         <Image
           src='/logo.png'
           alt="Mac Hooper's Logo"
@@ -18,13 +18,13 @@ export default function Header() {
         />
       </Link>
       <List d='flex' align='center'>
-        <Link href='/blog' passHref>
+        <Link href='/blog'>
           <ListItem mx='.3rem'>Blog</ListItem>
         </Link>
-        {/* <Link href="/courses" passHref>
+        {/* <Link href="/courses">
           <ListItem mx=".3rem">Courses</ListItem>
         </Link> */}
-        <Link href='/#contact' passHref>
+        <Link href='/#contact'>
           <ListItem mx='.3rem'>Contact</ListItem>
         </Link>
       </List>

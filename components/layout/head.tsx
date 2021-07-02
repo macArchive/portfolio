@@ -24,7 +24,7 @@ export default function Head({
   siteLocale,
   siteType,
   siteUrl,
-  themeColor
+  themeColor,
 }: HeadProps) {
   return (
     <NextHead>
@@ -47,6 +47,7 @@ export default function Head({
       <link rel='canonical' href={siteUrl}></link>
       <link rel='icon' href={siteIcon} type='image/svg+xml'></link>
       <link rel='apple-touch-icon' href={touchIcon}></link>
+      <link rel='manifest' href='/manifest.json'></link>
       <meta name='theme-color' content={themeColor}></meta>
     </NextHead>
   )

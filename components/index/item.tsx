@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Item({ url, icon, heading, text }) {
   return (
-    <Link href={url} passHref>
+    <Link href={url}>
       <a target='_blank' style={{ color: 'inherit' }}>
         <Stack
           maxW='400px'

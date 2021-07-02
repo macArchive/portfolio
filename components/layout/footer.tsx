@@ -6,12 +6,10 @@ export default function Footer() {
   return (
     <Stack align='center' py={20}>
       <Stack direction='row' align='center' spacing={4}>
-        <Link
-          href='https://www.youtube.com/channel/UCnTtBprmR4yTz3ieMSuWzlA'
-          passHref>
+        <Link href='https://www.youtube.com/channel/UCnTtBprmR4yTz3ieMSuWzlA'>
           <AiFillYoutube fontSize='2.5rem' />
         </Link>
-        <Link href='https://www.github.com/machooper' passHref>
+        <Link href='https://www.github.com/machooper'>
           <AiFillGithub fontSize='2.5rem' />
         </Link>
       </Stack>

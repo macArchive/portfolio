@@ -1,0 +1,25 @@
+{
+  "short_name": "Mac",
+  "name": "Mac's Portfolio",
+  "description": "Mac's portfolio site, showing recent work, blog posts and more.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#0099ff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0099ff",
+  "shortcuts": [
+    {
+      "name": "View My Blog",
+      "short_name": "Blog",
+      "description": "View my most recent blog posts",
+      "url": "/blog?source=pwa"
+    }
+  ]
+}

@@ -21,7 +21,7 @@ export default function Cta({ heading, text, button, leftIcon, url }) {
           transformOrigin: 'left top',
           transform: 'skewY(3deg)',
           overflowX: 'hidden',
-          boxShadow: 'lg'
+          boxShadow: 'lg',
         }}
         _before={{
           content: '""',
@@ -33,7 +33,7 @@ export default function Cta({ heading, text, button, leftIcon, url }) {
           top: 0,
           transformOrigin: 'left bottom',
           transform: 'skewY(3deg)',
-          overflowX: 'hidden'
+          overflowX: 'hidden',
         }}
         spacing={7}>
         <Heading maxW='400px' mx='auto'>
@@ -42,7 +42,7 @@ export default function Cta({ heading, text, button, leftIcon, url }) {
         <Text textAlign='center' maxW='400px'>
           {text}
         </Text>
-        <Link href={url} passHref>
+        <Link href={url}>
           <Button variant='solid' leftIcon={leftIcon}>
             {button}
           </Button>
