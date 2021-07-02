@@ -1,4 +1,5 @@
-import { Image, Link, List, ListItem, Stack } from '@chakra-ui/react'
+import { Link, List, ListItem, Stack } from '@chakra-ui/react'
+import Image from 'next/image'
 
 export default function Header() {
   return (
@@ -9,7 +10,12 @@ export default function Header() {
       p='1.5rem'
       mb={{ base: '1rem', md: '2rem' }}>
       <Link href='/' passHref>
-        <Image src='/logo.png' alt="Mac Hooper's Logo" w={10} />
+        <Image
+          src='/logo.png'
+          alt="Mac Hooper's Logo"
+          width='40px'
+          height='24px'
+        />
       </Link>
       <List d='flex' align='center'>
         <Link href='/blog' passHref>
