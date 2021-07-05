@@ -24,7 +24,7 @@ export default function Head({
   siteLocale,
   siteType,
   siteUrl,
-  themeColor,
+  themeColor
 }: HeadProps) {
   return (
     <NextHead>

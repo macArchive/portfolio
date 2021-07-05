@@ -1,8 +1,8 @@
 ---
 title: A Look at My Stack
-topic: "web"
-coverImage: "/blog/stack/cover.webp"
-date: "17.05.21"
+topic: 'web'
+coverImage: '/blog/stack/cover.webp'
+date: '17.05.21'
 excerpt: "I'm going to keep this post to a simple list rather than detailing each choice. I might make a video in the future that details my choices."
 ---
 

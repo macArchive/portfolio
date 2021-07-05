@@ -1,8 +1,8 @@
 ---
-title: "The Best Browser Extension..."
-topic: "technology"
-coverImage: "/blog/vimum/cover.webp"
-date: "19.05.21"
+title: 'The Best Browser Extension...'
+topic: 'technology'
+coverImage: '/blog/vimum/cover.webp'
+date: '19.05.21'
 excerpt: "Now I know what you're thinking... there is no way a browser extension can be that good"
 ---
 

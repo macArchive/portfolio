@@ -1,9 +1,9 @@
 ---
 title: A New Site, a New Blog
-topic: "general"
-coverImage: "/blog/welcome/cover.webp"
-date: "15.05.21"
-excerpt: "I have enjoyed developing websites over the past year but realised that my site had gotten a little dated in comparison to my skills, so I built this new one! Using Preact, Next.JS and Markdown."
+topic: 'general'
+coverImage: '/blog/welcome/cover.webp'
+date: '15.05.21'
+excerpt: 'I have enjoyed developing websites over the past year but realised that my site had gotten a little dated in comparison to my skills, so I built this new one! Using Preact, Next.JS and Markdown.'
 ---
 
 I have enjoyed developing websites over the past year but realised that my site had gotten a little dated in comparison to my skills, so I built this new one! Using Preact, Next.JS and Markdown. I am interested in seeing how it will fair in comparison to my previous site, the code is certainly much cleaner so I am looking forward to working with it.
