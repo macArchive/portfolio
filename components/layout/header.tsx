@@ -33,7 +33,6 @@ export default function Header() {
               Contact
             </Link>
           </ListItem>
-        </Link>
       </List>
     </Stack>
   )
