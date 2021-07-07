@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Item({ url, icon, heading, text }) {
   return (
     <Link href={url}>
-      <a target='_blank' style={{ color: 'inherit' }}>
+      <a target='_blank' rel='noopener' style={{ color: 'inherit' }}>
         <Stack
           maxW='400px'
           direction='row'
