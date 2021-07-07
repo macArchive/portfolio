@@ -22,7 +22,7 @@ export default function Header() {
             <Link href='/blog'>
               Blog
             </Link>
-          </ListItem> 
+          </ListItem>
       {/* <ListItem mx='.3rem'>
             <Link href='/courses'>
               Courses
