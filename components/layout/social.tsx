@@ -10,6 +10,7 @@ export default function SocialIcons() {
         aria-label='Github'
         icon={<FiGithub size='20px' />}
         variant='link'
+        cursor='pointer'
       />
     </ButtonGroup>
   )
