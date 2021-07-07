@@ -18,14 +18,13 @@ export default function Header() {
         />
       </Link>
       <List d='flex' align='center'>
-        <Link href='/blog'>
-          <ListItem mx='.3rem'>Blog</ListItem>
-        </Link>
-        {/* <Link href="/courses">
-          <ListItem mx=".3rem">Courses</ListItem>
-        </Link> */}
-        <Link href='/#contact'>
-          <ListItem mx='.3rem'>Contact</ListItem>
+          <ListItem mx='.3rem'>
+            <Link href='/blog'>Blog
+          </Link></ListItem>
+        {*/ /Courses*/}
+          <ListItem mx='.3rem'>
+            <Link href='/#contact'>Contact
+          </Link></ListItem>
         </Link>
       </List>
     </Stack>
