@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Hero() {
   return (
     <Stack spacing={3}>
-      <Heading maxW={['70vw', '90vw']}>
+      <Heading as='h1' maxW={['70vw', '90vw']}>
         Hi, I&apos;m <br /> Mac Hooper
       </Heading>
       <Text>
